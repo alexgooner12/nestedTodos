@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoMVC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="view.showTodo()">
+    <h1>todos</h1>
+    <div class="todo-box">
+        <div>
+            <label class="toggler" onclick="todo.toggleAll()">&uarr;</label>
+            <input onkeyup="handlers.onEnter(event)" type="text" class="main-input" id="todo-input" placeholder="What needs to be done ?" autofocus>
+            <ul class="list list-basic"></ul>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>

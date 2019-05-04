@@ -1,0 +1,166 @@
+body {
+    background-color: #ebeaea;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-box {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: 610px;
+}
+
+.todo-box div {
+    position: relative;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 100;
+    color: #EAD7D7;
+    margin: 10px 0 -20px 0;
+}
+
+.main-input {
+    height: 60px;
+    width: 550px;
+    padding-left: 60px;
+    outline: none;
+    border: 0;
+    border: 1px solid #e3e3e3;
+}
+
+.todo-item {
+    position: relative;
+    min-height: 50px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.todo-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: center;
+}
+
+
+.todo-item:hover > .todo-item-wrapper .delete-button {
+    visibility: visible;
+}
+
+.todo-item:not(:hover) > .todo-item-wrapper .delete-button {
+    visibility: hidden;
+}
+
+.main-input::placeholder {
+    color: #e6e6e6;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.input, .label, input.edit {
+    width: 90%;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+    border: 0;
+    outline: none;
+    background: #fff;
+}
+
+.adder {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+input.edit {
+    display: none;
+}
+.editing .label {
+    display: none;
+}
+
+.editing input.edit {
+    display: block;
+    width: 80%;
+    margin-right: auto;
+}
+
+.editing {
+    border: 1px solid grey;
+}
+
+.delete-button {
+    border: 0;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    visibility: hidden;
+    align-self: self-start;
+}
+
+.toggler {
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+
+.toggle {
+    background: #fff;
+    position: relative;
+    height: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.toggle .editing {
+    width: 20px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+}
+
+.list-basic {
+    width: 100%;
+}
+
+.info {
+    height: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr 150px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #e3e3e3;
+    color: #696969;
+}
+
+.info-button {  
+    border: 0;
+    color: #696969;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    margin: 0 8px;
+}
